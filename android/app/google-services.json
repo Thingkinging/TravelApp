@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "82252471486",
+    "project_id": "travelapp-a0ed2",
+    "storage_bucket": "travelapp-a0ed2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82252471486:android:04f7ba15f69223312952ef",
+        "android_client_info": {
+          "package_name": "com.example.travel_korea_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfAKLDNoVOsHdzxxVSfKY78jYcKutRhLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

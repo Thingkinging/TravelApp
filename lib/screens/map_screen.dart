@@ -85,6 +85,12 @@ class _MapScreenState extends State<MapScreen> {
                             builder: (_) => DetailScreen(
                               city: cityList[index]!,
                               info: info[cityList[index]!] as List<dynamic>,
+                              isCheckIn: cityCheckInList[index],
+                              onCheckInChanged: (bool value) {
+                                setState(() {
+                                  cityCheckInList[index] = value;
+                                });
+                              },
                             ),
                           ));
                         },
@@ -101,10 +107,12 @@ class _MapScreenState extends State<MapScreen> {
                             ][index % 5],
                           ),
                           child: Center(
-                            child: Text(
-                              cityList[index]!,
-                              style: TextStyle(fontSize: 20.0),
-                            ),
+                            child: cityCheckInList[index]
+                                ? Icon(Icons.check)
+                                : Text(
+                                    cityList[index]!,
+                                    style: TextStyle(fontSize: 20.0),
+                                  ),
                           ),
                         ),
                       )
